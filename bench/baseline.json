@@ -1,0 +1,97 @@
+[
+  {
+    "name": "partitionHot (10k items)",
+    "opsPerSec": 23187.447031388132,
+    "margin": 0.5648389243205271
+  },
+  {
+    "name": "uniqueByKeyHot (10k objects)",
+    "opsPerSec": 6601.486765768811,
+    "margin": 0.3652409006760188
+  },
+  {
+    "name": "uniqueByKeyHot string path (10k objects)",
+    "opsPerSec": 6104.537742291302,
+    "margin": 0.7554706253852093
+  },
+  {
+    "name": "intersectionHot (2 arrays, 10k each)",
+    "opsPerSec": 6924.022124607695,
+    "margin": 0.17466835495318578
+  },
+  {
+    "name": "groupByHot Map (10k items)",
+    "opsPerSec": 4885.810823649804,
+    "margin": 0.3198504846579246
+  },
+  {
+    "name": "groupByHot Object (10k items)",
+    "opsPerSec": 8323.31478721113,
+    "margin": 0.35533186592118543
+  },
+  {
+    "name": "groupByHot string path (10k items)",
+    "opsPerSec": 4728.14910531449,
+    "margin": 0.308877842200536
+  },
+  {
+    "name": "indexByHot (10k items)",
+    "opsPerSec": 8102.784625456401,
+    "margin": 0.5923725654576286
+  },
+  {
+    "name": "countByHot (10k items)",
+    "opsPerSec": 6682.917118134705,
+    "margin": 0.3048523323978693
+  },
+  {
+    "name": "mapKeysHot (100 keys)",
+    "opsPerSec": 73761.0776146357,
+    "margin": 0.2721757639288274
+  },
+  {
+    "name": "mapValuesHot (100 keys)",
+    "opsPerSec": 202233.8191452575,
+    "margin": 0.6674477688174314
+  },
+  {
+    "name": "mapObjectHot (100 keys)",
+    "opsPerSec": 71377.237559786,
+    "margin": 0.28747911616163674
+  },
+  {
+    "name": "omitHot (100 keys, omit 5)",
+    "opsPerSec": 344357.6696360045,
+    "margin": 0.547658339559346
+  },
+  {
+    "name": "pickHot (100 keys, pick 5)",
+    "opsPerSec": 3282201.207864843,
+    "margin": 0.23881733572700656
+  },
+  {
+    "name": "evolveHot (nested)",
+    "opsPerSec": 3041921.0011884924,
+    "margin": 0.6199919808675017
+  },
+  {
+    "name": "mapKeysHotFast (100 keys)",
+    "opsPerSec": 65057.91594972901,
+    "margin": 6.424480241736459
+  },
+  {
+    "name": "mapValuesHotFast (100 keys)",
+    "opsPerSec": 206748.32499714507,
+    "margin": 0.5252210709520231
+  },
+  {
+    "name": "mapObjectHotFast (100 keys)",
+    "opsPerSec": 71366.90469543422,
+    "margin": 0.3471872700866301
+  },
+  {
+    "name": "evolveHotFast (nested)",
+    "opsPerSec": 3025000.0374390995,
+    "margin": 0.9496315377404817
+  }
+]
