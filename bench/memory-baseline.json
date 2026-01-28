@@ -1,7 +1,7 @@
 [
   {
     "operation": "partition (10k items)",
-    "bytes": 316304
+    "bytes": 315544
   },
   {
     "operation": "intersection (2x 10k primitives)",
