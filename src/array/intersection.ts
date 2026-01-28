@@ -158,14 +158,11 @@ export function intersectionByHot<T>(...args: (readonly T[] | Iteratee<T, unknow
   }
 
   const result: T[] = [];
-  const seenKeys = new Set<unknown>();
 
+  // Delete from otherKeys after match to handle duplicates in arr1
   for (let i = 0; i < arr1.length; i++) {
     const item = arr1[i]!;
     const key = selector(item, i);
-
-    if (seenKeys.has(key)) continue;
-    seenKeys.add(key);
 
     let inAll = true;
     for (let j = 0; j < otherKeySets.length; j++) {
