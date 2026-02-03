@@ -19,9 +19,7 @@
   "author": "Tony Natelli <tony@suspended.systems>",
   "license": "MIT",
   "scripts": {
-    "build": "pnpm build:esm && pnpm build:cjs",
-    "build:esm": "tsc -p tsconfig.esm.json",
-    "build:cjs": "tsc -p tsconfig.cjs.json && node scripts/rename-cjs.js",
+    "build": "tsup",
     "test": "vitest",
     "test:run": "vitest run",
     "test:coverage": "vitest run --coverage",
@@ -48,43 +46,44 @@
     "radash": "^12.1.1",
     "ramda": "^0.32.0",
     "tinybench": "^6.0.0",
+    "tsup": "^8.5.1",
     "tsx": "^4.21.0",
     "typescript": "^5.6.3",
     "vitest": "^4.0.16"
   },
   "type": "module",
-  "main": "./dist/cjs/index.cjs",
-  "module": "./dist/esm/index.js",
-  "types": "./dist/esm/index.d.ts",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "import": {
-        "types": "./dist/esm/index.d.ts",
-        "default": "./dist/esm/index.js"
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
       },
       "require": {
-        "types": "./dist/cjs/index.d.cts",
-        "default": "./dist/cjs/index.cjs"
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
       }
     },
     "./array": {
       "import": {
-        "types": "./dist/esm/array/index.d.ts",
-        "default": "./dist/esm/array/index.js"
+        "types": "./dist/array/index.d.ts",
+        "default": "./dist/array/index.js"
       },
       "require": {
-        "types": "./dist/cjs/array/index.d.cts",
-        "default": "./dist/cjs/array/index.cjs"
+        "types": "./dist/array/index.d.cts",
+        "default": "./dist/array/index.cjs"
       }
     },
     "./object": {
       "import": {
-        "types": "./dist/esm/object/index.d.ts",
-        "default": "./dist/esm/object/index.js"
+        "types": "./dist/object/index.d.ts",
+        "default": "./dist/object/index.js"
       },
       "require": {
-        "types": "./dist/cjs/object/index.d.cts",
-        "default": "./dist/cjs/object/index.cjs"
+        "types": "./dist/object/index.d.cts",
+        "default": "./dist/object/index.cjs"
       }
     }
   },
